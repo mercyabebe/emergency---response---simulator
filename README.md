@@ -1,3 +1,5 @@
+Name Mihret Abebe
+DBU 1501367
 # Project Name: Emergency Response Simulation
 Project Description:
 The Emergency Response Simulation project is a console-based application designed to simulate the response of different emergency units (Police, Firefighters, Ambulance, and Search and Rescue) to various incidents such as fire, crime, medical emergencies, earthquakes, and floods. Each emergency unit has a specific type of incident it can handle, and the user must either manually or automatically select a unit to respond to an incident. The simulation tracks the response time and assigns points based on how efficiently the incident is handled, with the goal of maximizing the score.
