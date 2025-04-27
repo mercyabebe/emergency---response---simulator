@@ -52,40 +52,7 @@ The CanHandle and RespondToIncident methods are overridden in each subclass, all
 Class Diagram
 Below is a text-based representation of the class structure:
 
-pgsql
-Copy
-Edit
-                +-----------------+
-                |  EmergencyUnit  |  <---- Abstract class
-                +-----------------+
-                | - Name          |
-                | - Speed         |
-                +-----------------+
-                | + CanHandle()   |
-                | + RespondToIncident() |
-                +-----------------+
-                        ^
-                        |
-        --------------------------------------------
-       |                   |                   |                |
-+-----------+      +--------------+      +----------+     +----------------+
-|  Police   |      |  Firefighter |      | Ambulance|     | SearchAndRescue |
-+-----------+      +--------------+      +----------+     +----------------+
-| + CanHandle()|    | + CanHandle()|    | + CanHandle()|  | + CanHandle()    |
-| + RespondToIncident()| | RespondToIncident() | | RespondToIncident() | | RespondToIncident() |
-+-----------+      +--------------+      +----------+     +----------------+
-Game Flow
-Start Simulation: The program starts by initializing a list of emergency units (Police, Firefighter, Ambulance, and Search and Rescue).
 
-Select Incident Type: The user is prompted to choose an incident type (Fire, Crime, Medical, Earthquake, or Flood).
-
-Random Location and Difficulty: A random location and difficulty level (1-5) are chosen for the incident.
-
-Unit Selection: The user can choose to select a unit manually or let the system automatically choose the appropriate unit based on the incident type.
-
-Incident Response: The selected unit responds to the incident, and the system calculates the response time based on the unit's speed and the incident's difficulty. Points are awarded or deducted depending on whether the unit can handle the incident.
-
-Repeat: The simulation proceeds for a total of 5 turns, each with a new incident.
 
 End Simulation: The game ends after 5 turns, and the final score is displayed.
 
